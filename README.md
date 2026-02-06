@@ -75,7 +75,7 @@ If you aren't following the [getting started guide](https://discord.com/develope
 
 ### Insult Bot
 
-A modular bot that follows a specific user and replies with ChatGPT-generated funny insults whenever they message:
+A modular bot that follows a specific user and replies with LLM-generated funny insults whenever they message. Uses a **local LLM** via [Ollama](https://ollama.com) (no API key required).
 
 ```
 npm run bot
@@ -84,7 +84,7 @@ npm run bot
 On startup, you'll be prompted to enter the Discord User ID of the person to follow. Get it by right-clicking their profile → Copy User ID (enable Developer Mode in Discord settings first).
 
 **Requirements:**
-- `OPENAI_API_KEY` in `.env`
+- [Ollama](https://ollama.com) installed and running, with a model pulled: `ollama pull llama3.2`
 - In [Discord Developer Portal](https://discord.com/developers/applications) → your app → Bot → enable **Message Content Intent**
 
 ### Set up interactivity
