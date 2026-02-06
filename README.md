@@ -73,6 +73,20 @@ node app.js
 
 If you aren't following the [getting started guide](https://discord.com/developers/docs/getting-started), you can move the contents of `examples/app.js` (the finished `app.js` file) to the top-level `app.js`.
 
+### Insult Bot
+
+A modular bot that follows a specific user and replies with ChatGPT-generated funny insults whenever they message:
+
+```
+npm run bot
+```
+
+On startup, you'll be prompted to enter the Discord User ID of the person to follow. Get it by right-clicking their profile → Copy User ID (enable Developer Mode in Discord settings first).
+
+**Requirements:**
+- `OPENAI_API_KEY` in `.env`
+- In [Discord Developer Portal](https://discord.com/developers/applications) → your app → Bot → enable **Message Content Intent**
+
 ### Set up interactivity
 
 The project needs a public endpoint where Discord can send requests. To develop and test locally, you can use something like [`ngrok`](https://ngrok.com/) to tunnel HTTP traffic.
